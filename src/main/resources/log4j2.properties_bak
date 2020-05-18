@@ -1,9 +1,16 @@
 # ALL > TRACE > DEBUG > INFO > WARN > ERROR > FATAL >  OFF
-rootLogger.level = OFF
+rootLogger.level = DEBUG
 rootLogger.appenderRef.console.ref = ConsoleAppender
 
 logger.sink.name = spendreport
 logger.sink.level = DEBUG
+
+
+log4j.logger.a.name=org.apache.flink.runtime.rpc.akka.SupervisorActor
+log4j.logger.a.level=INFO
+
+
+
 
 appender.console.name = ConsoleAppender
 appender.console.type = CONSOLE
