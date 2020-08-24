@@ -39,10 +39,10 @@ public class v7 {
 		streamOperator1.process(new MyProcessFunction2());
 
 
-		env.execute("诈骗检测");
+		//env.execute("诈骗检测");
 
 		//输出执行计划
-		//System.out.println(env.getExecutionPlan());
+		System.out.println(env.getExecutionPlan());
 		System.out.println("============完成============");
 
 
